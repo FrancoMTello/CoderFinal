@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+/* Logo */
+header {
+  display: flex;
+  background-color: rgba(255, 13, 13, 0.815);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+}
+
+header div h1 {
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0;
+  padding: 10;
+}
+
+/*capa de header*/
+.header {
+  padding: 10px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 42, 42, 0.788);
+}
+
+/* Esto modifica el nav*/
+header nav ul {
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  justify-content: space-evenly;
+  text-align: right;
+  font-size: 20px;
+  margin: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+header nav ul li a {
+  list-style-type: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: right;
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+    color: black;
+  }
+}
+/* Efecto Hover */
+header nav ul li a {
+  list-style-type: none;
+}
+
+nav ul li:hover {
+  background-color: rgb(255, 115, 115);
+}
+
+nav ul li:hover a {
+  color: #000000;
+}
+
+/* Menu hamburguesa */
+.checkbox, .icons {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  cursor: pointer;
+}
+
+.icons {
+  pointer-events: none;
+  color: #000000;
+  font-size: 25px;
+}
+
+.checkbox {
+  opacity: 0;
+}
+
+.fi-sr-cross {
+  display: none;
+}
+
+.checkbox:checked ~ .fi-rr-menu-burger {
+  display: none;
+}
+
+.checkbox:checked ~ .fi-sr-cross {
+  display: block;
+}
+
+.menu-li-a {
+  background-color: red;
+  display: block;
+  padding: 10px 10px;
+}
+
+.menu {
+  display: none;
+}
+
+.checkbox:checked ~ .menu {
+  display: inline;
+}
+
+.nosotros {
+  background-image: url("../Img/fondo-iPhone-1080x630-rojo.jpg");
+  background-size: cover;
+}
+
+.main {
+  z-index: 0;
+  position: relative;
+}
+
+.sobre_nosotros {
+  display: flex;
+  color: rgb(0, 0, 0);
+  background-color: rgba(247, 39, 39, 0.836);
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.fuente {
+  color: rgb(255, 255, 255);
+  font-family: Arial black;
+  margin-top: 10px;
+}
+
+.footer2 {
+  font-size: 20px;
+  font-size: bolder;
+  display: flex;
+  width: 100%;
+  float: left;
+  background-color: rgba(230, 2, 2, 0.815);
+  height: 100px;
+  padding-top: 40px;
+  margin-top: 507px;
+}
+
+@media (max-width: 576px) {
+  .header {
+    display: flex;
+    background-color: transparent;
+    background-color: rgba(247, 39, 39, 0.836);
+    color: rgb(255, 255, 255);
+    position: relative;
+  }
+  .header div h1 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+    padding: 10;
+  }
+  .main h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .footer2 {
+    margin-top: 137px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(247, 39, 39, 0.836);
+  }
+  .nosotros {
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .sobre_nosotros {
+    display: block;
+    font-weight: 1px;
+    background-color: rgba(247, 39, 39, 0.836);
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    padding-bottom: 5px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+/* Marco*/
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Gracias por visitarnos*/
+.main_div {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.main_div_span {
+  display: block;
+  background-color: rgba(39, 38, 38, 0.384);
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.main_div_p {
+  display: flex;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-top: 5%;
+  background-color: rgb(211, 211, 211);
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.main_section_span {
+  display: block;
+  font-size: 30px;
+  width: 100%;
+  background-color: rgba(39, 38, 38, 0.384);
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+/* Esto es para la seccion de compras */
+.card {
+  display: block;
+  margin: 0;
+}
+
+.card-body {
+  border: 1px solid #a5a4a4;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-left: 0;
+}
+
+.card-title {
+  padding-top: 100px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+body main section article p {
+  font-size: 20px;
+}
+
+body main section article h4 {
+  font-size: 25px;
+  margin: 10px;
+}
+
+.logo {
+  background-image: url("../Img/1600x1200-Red-Wallpaper-Resumen.png");
+  background-size: 100%;
+  z-index: 1;
+}
+
+/* Ordena las imagenes*/
+.imagenes {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  background-color: rgba(247, 39, 39, 0.836);
+  margin-top: 490px;
+}
+
+.destacado {
+  color: white;
+  background-color: rgb(173, 5, 5);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.fuente-destacados {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(173, 5, 5);
+}
+
+@media (max-width: 576px) {
+  .logo {
+    background-size: 590%;
+    background-repeat: no-repeat;
+  }
+  .imagenes {
+    display: block;
+  }
+  .destacado {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .header {
+    display: flex;
+    background-color: transparent;
+    background-color: rgba(247, 39, 39, 0.836);
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+  }
+  .footer {
+    margin-top: 210px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    background-color: rgba(255, 13, 13, 0.815);
+  }
+}
+/* espacio del body*/
+.espaciobody {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+/* espacio del footer*/
+.espacio {
+  margin-top: 300px;
+  font-size: 20px;
+  font-size: bolder;
+  display: flex;
+  width: 100%;
+  float: left;
+  background-color: rgba(230, 2, 2, 0.815);
+  height: 100px;
+  padding-top: 40px;
+}
+
+/* Margin del body*/
+.margin {
+  margin-top: 30px;
+}
+
+/* Margin del footer */
+.espaciado {
+  margin-top: 300px;
+  font-size: 20px;
+  font-size: bolder;
+  display: flex;
+  width: 100%;
+  float: left;
+  background-color: rgba(230, 2, 2, 0.815);
+  height: 100px;
+  padding-top: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+.body-footer {
+  font-size: 20px;
+  font-size: bolder;
+  display: flex;
+  width: 100%;
+  float: left;
+  background-color: rgba(252, 44, 44, 0.815);
+  height: 100px;
+  padding-top: 40px;
+  margin-top: 220px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

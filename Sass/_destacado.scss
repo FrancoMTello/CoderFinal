@@ -1,0 +1,68 @@
+
+
+
+.logo{
+    background-image: url('../Img/1600x1200-Red-Wallpaper-Resumen.png');
+    background-size: 100%;
+    z-index: 1;
+}
+/* Ordena las imagenes*/
+.imagenes{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+}
+.footer{
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    background-color: rgba(247, 39, 39, 0.836);
+    margin-top: 490px;
+    }
+.destacado{
+    color: white;
+    background-color: rgb(173, 5, 5); 
+    margin: 10px;
+    border-radius: 10px;
+}
+.fuente-destacados{
+    color: white;
+    padding: 10px;
+    margin: 10px ;
+    border-radius: 10px;
+    background-color: rgb(173, 5, 5); 
+}
+@media (max-width: 576px){
+    .logo{
+        background-size: 590%;
+        background-repeat: no-repeat;
+    }
+    .imagenes{
+        display: block;
+    }
+    .destacado{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:auto;
+        margin-left: 10%;
+        margin-right: 10%;}
+    .header{
+        display:flex;
+        background-color: transparent;
+        background-color:rgba(247, 39, 39, 0.836);
+        color: rgb(255, 255, 255);
+        position: relative;
+        z-index: 1;
+    }
+    .footer{
+        margin-top: 210px;
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+        background-color: rgba(255, 13, 13, 0.815);
+    }
+}

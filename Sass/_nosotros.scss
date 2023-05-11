@@ -1,0 +1,84 @@
+
+
+
+.nosotros{
+    background-image: url('../Img/fondo-iPhone-1080x630-rojo.jpg');
+    background-size: cover;
+}
+
+
+.main{
+    z-index: 0;
+    position: relative;
+}
+.sobre_nosotros{
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-color: rgba(247, 39, 39, 0.836);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px;
+    }
+
+.fuente{
+    color: rgb(255, 255, 255);
+    font-family:Arial black;
+    margin-top: 10px;
+    }
+.footer2{
+    font-size: 20px;
+    font-size: bolder;
+    display: flex;
+    width: 100%;
+    float: left;
+    background-color: rgba(230, 2, 2, 0.815);
+    height: 100px;
+    padding-top: 40px;
+    margin-top: 507px;
+}
+
+@media (max-width: 576px) {
+    .header{
+        display:flex;
+        background-color: transparent;
+        background-color:rgba(247, 39, 39, 0.836);
+        color: rgb(255, 255, 255);
+        position: relative;
+    }
+    .header div h1{
+        font-weight: bold;
+        font-size: 35px;
+        margin: 0;
+        padding: 10;
+    }
+    .main h1{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .footer2{
+        margin-top: 137px;
+        position: relative;
+        z-index: 1;
+        background-color: rgba(247, 39, 39, 0.836);
+    }
+    .nosotros{
+        background-size: 250%;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .sobre_nosotros{
+        display:block;
+        font-weight: 1px;
+        background-color: rgba(247, 39, 39, 0.836);
+        font-size: 11px;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        padding-bottom: 5px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
